@@ -5,12 +5,12 @@ This Google Chrome extention will replace trans peoples' dead names with their r
 
 To-Do:
 
-- Initial commit: Complete
-- Create icon: Complete
-- Create text-replace function: In progress
-- Find resources: In progress
-- Create UI: Not started
-- Publish App V1: Not started
+- [x] Initial commit
+- [x] Create icon
+- [x] Create text-replace function
+- [x] Find resources
+- [x] Create UI
+- [x] Publish App V1
 
 
 > Written with [StackEdit](https://stackedit.io/).
