@@ -7,10 +7,10 @@ To-Do:
 
 - [x] Initial commit
 - [x] Create icon
-- [x] Create text-replace function
-- [x] Find resources
-- [x] Create UI
-- [x] Publish App V1
+- [] Create text-replace function
+- [] Find resources
+- [] Create UI
+- [] Publish App V1
 
 
 > Written with [StackEdit](https://stackedit.io/).
