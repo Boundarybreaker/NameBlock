@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+
+  "name": "NameBlock",
+  "description": "This extension helps trans teens avoid their dead names in their mail and other places they might be at risk. ",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+    "default_title": "NameBlock"
+  },
+  "permissions": [
+    "activeTab",
+    "https://ajax.googleapis.com/"
+  ]
+}
