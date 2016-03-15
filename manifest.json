@@ -6,12 +6,22 @@
   "version": "1.0",
 
   "browser_action": {
-    "default_icon": "icon.png",
-    "default_popup": "popup.html"
-    "default_title": "NameBlock"
+    "default_icon": {
+      "19": "images/enabled.png"
+    },
+    "default_title": "click to deactivate name replacement"
+  },
+  "background": {
+    "scripts": [
+      "js/background.js"
+    ],
+    "persistent": false
   },
   "permissions": [
     "activeTab",
-    "https://ajax.googleapis.com/"
+    "tabs",
+    "storage",
+    "http://*/*",
+    "https://*/*",
   ]
 }
