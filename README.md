@@ -7,7 +7,8 @@ To-Do:
 
 - [x] Initial commit
 - [x] Create icon
-- [ ] Create text-replace function
+- [x] Create text-replace function
+- [ ] Allow you to edit text-replace options and whitelist
 - [ ] Find resources
 - [ ] Create UI
 - [ ] Publish App V1
