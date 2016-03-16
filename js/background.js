@@ -1,6 +1,6 @@
 //Default replacements
 var default_replacements = [
-    ['Thomas', 'Meredith'],
+    ['Thomas', 'Meredith*'],
 ];
 //Default Whitelist
 var default_whitelisted_sites = ["docs.google.com",
@@ -8,6 +8,7 @@ var default_whitelisted_sites = ["docs.google.com",
     "mail.google.com",
     "mail.yahoo.com",
     "outlook.com",
+    "drive.google.com",
 ]
 
 debug = false;
@@ -20,7 +21,7 @@ function checkWhiteList(url, whitelist) {
             return true;
         }
     };
-    return true;
+    return false;
 }
 
 function injectionScript(tabId, info, tab) {
@@ -76,7 +77,7 @@ function toggleActive() {
         }
         if (status === "enabled") {
             icon = {
-                "path": "images/disabled.png"
+                "path": "../images/disabled.png"
             };
             message = {
                 "title": "Click to activate name replacement"
@@ -84,7 +85,7 @@ function toggleActive() {
             status = "disabled";
         } else if (status === "disabled") {
             icon = {
-                "path": "images/enabled.png"
+                "path": "../images/enabled.png"
             };
             message = {
                 "title": "Click to deactivate name replacement"
