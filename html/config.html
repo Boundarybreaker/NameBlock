@@ -25,25 +25,12 @@
         <div class="title">
             <h1>NameBlock</h1>
         </div>
-        <div class="ui three buttons">
-            <button id="save" class="large positive ui button">
-                <span>Save</span>
-            </button>
-            <button id="refresh" class="large ui teal button">
-                 Reload current settings
-            </button>
-        	<button id="reset" class="large negative ui button">
-                Reset to defaults
-            </button>
-        </div>
-    </div>
     </div>
     
 	<div id="options">
 		<div>
 			<h1>Whitelist</h1>
 			<p>To avoid having the name be replaced everywhere, this extension will only work on whitelisted sites.</p>
-			<p>It is recommended that you put a marker around your real name to note that the word has been substituted.</p>
 			<form id="whitelist">
 				<div>
 					<input autocomplete="off" placeholder="A comma separated list of websites" id="website-whitelist" type="text" type="text" class="input form-control field">
@@ -53,11 +40,23 @@
 		<div>
 			<div>
 				<h1>Name Substitution</h1>
-				<p>Your dead name will be replaced with your real name</p>
+				<p>Your dead name will be replaced with your real name. You may add other terms for replacement, if you wish.</p>
+				<p>It is recommended that you put a marker by your real name to note that the word has been substituted.</p>
 				<form id="replacements">
 				</form>
-			</div
+			</div>
 		</div>
+		<div class="ui three buttons">
+            <button id="save" class="large positive ui button">
+                <span>Save</span>
+            </button>
+            <button id="reset" class="large negative ui button">
+                 Reset
+            </button>
+        	<button id="refresh" class="large ui violet button">
+                Refresh
+            </button>
+        </div>
 	</div>
 </body>
 

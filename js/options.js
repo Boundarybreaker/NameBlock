@@ -16,7 +16,7 @@ function makeClean() {
 function saveOptions(e) {
   e.preventDefault;
   console.log("ping");
-  var blacklist = $("#website-blacklist").val().replace(/\s+/g, "").toLowerCase().split(",");
+  var whitelist = $("#website-whitelist").val().replace(/\s+/g, "").toLowerCase().split(",");
   var replacements = [];
   var originals = $('#replacements [name="origin"]');
   var replaces = $('#replacements [name="replace"]');
@@ -29,7 +29,7 @@ function saveOptions(e) {
     replacements.push([org, rep]);
   };
   chrome.storage.sync.set({
-      "blacklist": blacklist,
+      "whitelist": whitelist,
       "replacements": replacements
     },
     function() {
@@ -40,7 +40,7 @@ function saveOptions(e) {
 
 function reset(){
     chrome.storage.sync.set({
-      "blacklist": default_blacklisted_sites,
+      "whitelist": default_whitelisted_sites,
       "replacements": default_replacements
     },
     function() {
@@ -52,9 +52,9 @@ function reset(){
 
 function populateSettings() {
   $("#replacements").empty();
-  $("blacklist input").val("");
+  $("whitelist input").val("");
   chrome.storage.sync.get(null, function(result) {
-    $("#blacklist input").val(result["blacklist"].join(", "));
+    $("#whitelist input").val(result["whitelist"].join(", "));
     var replacements = result['replacements'];
     for (var i = 0; i < replacements.length; i++) {
       addbutt(null, replacements[i][0], replacements[i][1]);
