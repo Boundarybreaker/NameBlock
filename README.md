@@ -9,7 +9,8 @@ To-Do:
 - [x] Create icon
 - [x] Create text-replace function
 - [x] Allow you to edit text-replace options and whitelist
-- [ ] Allow you to disable text-replace
+- [x] Allow you to disable text-replace
+- [ ] Allow you to disable text-replace *properly*
 - [x] Find resources
 - [ ] Create UI
 - [ ] Publish App V1
