@@ -1,6 +1,6 @@
 //Default replacements
 var default_replacements = [
-    ['Thomas', 'Meredith*'],
+    ['Birth Name', 'Dead Name*'],
 ];
 //Default Whitelist
 var default_whitelisted_sites = ["docs.google.com",
@@ -11,7 +11,7 @@ var default_whitelisted_sites = ["docs.google.com",
     "drive.google.com",
 ]
 
-debug = false;
+debug = true;
 
 function checkWhiteList(url, whitelist) {
     url = url.toLowerCase() || "";
@@ -100,7 +100,7 @@ function toggleActive() {
     });
 }
 
-chrome.browserAction.onClicked.addListener(toggleActive);
+chrome.runtime.onMessage.addListener(toggleActive);
 chrome.runtime.onMessage.addListener(addMessage);
 chrome.tabs.onUpdated.addListener(injectionScript);
 chrome.runtime.onInstalled.addListener(fixDataCorruption);
