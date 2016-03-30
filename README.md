@@ -12,7 +12,7 @@ To-Do:
 - [x] Allow you to disable text-replace
 - [ ] Allow you to disable text-replace *properly*
 - [x] Find resources
-- [ ] Create UI
+- [x] Create UI
 - [ ] Publish App V1
 
 
