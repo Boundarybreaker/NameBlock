@@ -10,7 +10,7 @@ To-Do:
 - [x] Create text-replace function
 - [x] Allow you to edit text-replace options and whitelist
 - [x] Allow you to disable text-replace
-- [ ] Allow you to disable text-replace *properly*
+- [x] Allow you to disable text-replace *properly* (thanks to [Junior](http://stackoverflow.com/users/1173952/junior))
 - [x] Find resources
 - [x] Create UI
 - [ ] Publish App V1
