@@ -71,8 +71,8 @@ function addbutt(e, original, replacement) {
     e.preventDefault();
   }
   var addto = "#field" + next;
-  var removeBtn = '<span class="input-group-btn"> <button id="remove' + next + '"class="btn btn-danger remove-me" type="button"><i class="fa fa-remove"></i></button> </span>'
-  var addBtn = '<span class="input-group-btn add-rep"><button class="btn btn-info add-more" type="button"><i class="fa fa-plus add-more-icon"></i></button></span>'
+  var removeBtn = '<span class="input-group-btn"> <button id="remove' + next + '"class="ui negative icon button"><i class="minus icon"></i></button></span>'
+  var addBtn = '<span class="input-group-btn add-rep"><button class="ui positive icon button"><i class="plus icon"></i></button></span>'
   next = next + 1;
   var newIn = '<div id="field' + next + '" class="row ginp"><div class="col-xs-6"> <input autocomplete="off" placeholder="original" name="origin" type="text" class="input form-control" value="' + original + '"></div><div class="col-xs-6"><div class="input-group"><input autocomplete="off" placeholder="substitution" name="replace" type="text" class="input form-control"value="' + replacement + '">' + addBtn + ' </div>'
   $(".add-rep").replaceWith(removeBtn)
