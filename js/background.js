@@ -100,7 +100,6 @@ function toggleActive() {
     });
 }
 
-chrome.runtime.onMessage.addListener(toggleActive);
 chrome.runtime.onMessage.addListener(addMessage);
 chrome.tabs.onUpdated.addListener(injectionScript);
 chrome.runtime.onInstalled.addListener(fixDataCorruption);
