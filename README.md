@@ -13,6 +13,7 @@ To-Do:
 - [x] Allow you to disable text-replace *properly* (thanks to [Junior](http://stackoverflow.com/users/1173952/junior))
 - [x] Find resources
 - [x] Create UI
+- [x] Submit App V1
 - [ ] Publish App V1
 
 
