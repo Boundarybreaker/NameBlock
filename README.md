@@ -14,7 +14,7 @@ To-Do:
 - [x] Find resources
 - [x] Create UI
 - [x] Submit App V1
-- [ ] Publish App V1
+- [x] Publish App V1
 
 
 > Written with [StackEdit](https://stackedit.io/).
