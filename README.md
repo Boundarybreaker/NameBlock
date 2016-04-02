@@ -16,5 +16,10 @@ To-Do:
 - [x] Submit App V1
 - [x] Publish App V1
 
+Known bugs (checked off when fixed):
+
+- [ ] The extension will toggle on and off with a click anywhere on the page
+- [ ] Clicking on an image connected with a link will not redirect the user to the desired webpage
+
 
 > Written with [StackEdit](https://stackedit.io/).
